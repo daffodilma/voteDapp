@@ -27956,7 +27956,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var Voting = __WEBPACK_IMPORTED_MODULE_2_truffle_contract___default()(__WEBPACK_IMPORTED_MODULE_3__build_contracts_Voting_json___default.a);
 
-let candidates = {"Rama": "candidate-1", "Nick": "candidate-2", "Jose": "candidate-3"}
+let candidates = {"Lucy": "candidate-1", "Lancy": "candidate-2", "Wayne": "candidate-3"}
 
 window.voteForCandidate = function(candidate) {
  let candidateName = $("#candidate").val();

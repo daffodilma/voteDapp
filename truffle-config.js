@@ -49,7 +49,7 @@ module.exports = {
     // },
     
     develop: {
-      port: 8545
+      port: 8898
     },
 
     // Another network with more advanced options...

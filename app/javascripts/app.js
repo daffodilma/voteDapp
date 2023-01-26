@@ -1,3 +1,11 @@
+/*
+ * @Author: daffodilma daffodilma@163.com
+ * @Date: 2022-11-04 10:10:19
+ * @LastEditors: daffodilma daffodilma@163.com
+ * @LastEditTime: 2023-01-22 20:21:01
+ * @FilePath: \chapter2\app\javascripts\app.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // Import the page's CSS. Webpack will know what to do with it.
 import "../stylesheets/app.css";
 
@@ -37,9 +45,9 @@ $( document ).ready(function() {
   // Use Mist/MetaMask's provider
   window.web3 = new Web3(web3.currentProvider);
  } else {
-  console.warn("No web3 detected. Falling back to http://localhost:8545. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
+  console.warn("No web3 detected. Falling back to http://localhost:8898. You should remove this fallback when you deploy live, as it's inherently insecure. Consider switching to Metamask for development. More info here: http://truffleframework.com/tutorials/truffle-and-metamask");
   // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-  window.web3 = new Web3(new Web3.providers.HttpProvider("http://8545.1248429987d1f285ba9df2fc936a1314.xlab.ezsoft.com/"));
+  window.web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8889/app/index.html/"));
  }
 
  Voting.setProvider(web3.currentProvider);
